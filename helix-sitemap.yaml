@@ -1,0 +1,6 @@
+sitemaps:
+  default:
+    source: /query-index.json
+    destination: /sitemap.xml
+    hreflang: false
+    origin: https://main--jv-test--jmffraiz.aem.page

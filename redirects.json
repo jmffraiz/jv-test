@@ -1,0 +1,12 @@
+{
+  "total": 11,
+  "offset": 0,
+  "limit": 11,
+  "data": [
+    {"source": "/", "destination": "/nl/", "code": 301},
+    {"source": "/nl", "destination": "/nl/", "code": 301},
+    {"source": "/nl/treatment", "destination": "/nl/treatment/lips", "code": 302},
+    {"source": "/nl/clinics", "destination": "/nl/find-a-clinic", "code": 302}
+  ],
+  ":type": "sheet"
+}

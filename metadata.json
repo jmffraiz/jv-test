@@ -1,0 +1,19 @@
+{
+  "total": 11,
+  "offset": 0,
+  "limit": 11,
+  "data": [
+    {"path": "/nl/", "title": "JUVÉDERM® Nederlands", "description": "Accentueer je mooiste gezichtskenmerken met JUVÉDERM®", "og:type": "website"},
+    {"path": "/nl/treatment/lips", "title": "Juvederm en lippen", "description": "Vollere lippen dankzij JUVÉDERM®"},
+    {"path": "/nl/treatment/eye-area", "title": "Juvederm en ogen", "description": "Een stralende oogopslag met JUVÉDERM®"},
+    {"path": "/nl/treatment/enhance", "title": "Accentueren met Juvederm", "description": "Omarm en accentueer jouw unieke gelaatstrekken"},
+    {"path": "/nl/treatment/restore", "title": "Herstel met Juvederm", "description": "Herstel jouw unieke gezichtskenmerken"},
+    {"path": "/nl/treatment/male", "title": "Juvederm en mannen", "description": "JUVÉDERM® voor mannen - accentueer je gelaatstrekken"},
+    {"path": "/nl/qa", "title": "Veelgestelde vragen", "description": "Ontdek het antwoord op je vraag over JUVÉDERM®"},
+    {"path": "/nl/find-a-clinic", "title": "Vind een kliniek", "description": "Vind een JUVÉDERM® kliniek bij jou in de buurt"},
+    {"path": "/nl/contact-us", "title": "Neem contact op", "description": "Neem contact op met Allergan Aesthetics"},
+    {"path": "/nl/disclaimer", "title": "Social media disclaimer", "description": "Disclaimer voor sociale media kanalen"},
+    {"path": "/nl/algemene-voorwaarden-kliniekzoeker", "title": "Algemene Voorwaarden Kliniekzoeker", "description": "Gebruiksvoorwaarden van de kliniekzoeker"}
+  ],
+  ":type": "sheet"
+}
