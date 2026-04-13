@@ -1,0 +1,64 @@
+.before-after {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.before-after .before-after-container {
+  display: flex;
+  justify-content: center;
+}
+
+.before-after .before-after-slide {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.before-after .before-after-slide.hidden {
+  display: none;
+}
+
+.before-after .before-after-before,
+.before-after .before-after-after {
+  position: relative;
+  flex: 1;
+  max-width: 300px;
+}
+
+.before-after .before-after-before img,
+.before-after .before-after-after img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.before-after .label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgb(0 0 0 / 60%);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.before-after .before-after-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.before-after .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #6e2585;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.before-after .dot.active {
+  background: #6e2585;
+}

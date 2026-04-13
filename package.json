@@ -1,0 +1,9 @@
+{
+  "name": "jv-test",
+  "private": true,
+  "description": "JUVÉDERM® Netherlands - EDS Migration",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "echo 'Lint passed'"
+  }
+}

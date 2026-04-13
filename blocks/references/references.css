@@ -1,0 +1,16 @@
+.references {
+  background: #f9f9f9;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  border-top: 1px solid #eee;
+}
+
+.references .references-list {
+  font-size: 0.75rem;
+  color: #888;
+  line-height: 1.8;
+}
+
+.references .references-list ol {
+  padding-left: 1.5rem;
+}
