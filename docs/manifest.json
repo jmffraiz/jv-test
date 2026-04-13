@@ -1,0 +1,211 @@
+{
+  "site": {
+    "url": "https://www.juvederm.nl",
+    "name": "JUVÉDERM® Netherlands",
+    "language": "nl",
+    "description": "JUVÉDERM® hyaluronic acid dermal fillers for facial treatments in the Netherlands",
+    "brand": "Allergan Aesthetics / AbbVie"
+  },
+  "pages": [
+    {
+      "url": "https://www.juvederm.nl/nl",
+      "title": "JUVÉDERM® Nederlands - Jouw unieke schoonheid",
+      "archetype": "homepage",
+      "priority": 1,
+      "path": "/"
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/treatment/lips",
+      "title": "Juvederm en lippen | Juvéderm® Netherlands",
+      "archetype": "treatment",
+      "priority": 2,
+      "path": "/treatment/lips"
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/treatment/eye-area",
+      "title": "Juvederm en ogen | Juvéderm® Netherlands",
+      "archetype": "treatment",
+      "priority": 2,
+      "path": "/treatment/eye-area"
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/treatment/enhance",
+      "title": "Accentueren met Juvederm | Juvéderm® Netherlands",
+      "archetype": "treatment",
+      "priority": 2,
+      "path": "/treatment/enhance"
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/treatment/restore",
+      "title": "Herstel met Juvederm | Juvéderm® Netherlands",
+      "archetype": "treatment",
+      "priority": 2,
+      "path": "/treatment/restore"
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/treatment/male",
+      "title": "Juvederm en mannen | Juvéderm® Netherlands",
+      "archetype": "treatment",
+      "priority": 2,
+      "path": "/treatment/male"
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/qa",
+      "title": "Veelgestelde vragen Juvederm | Juvéderm® Netherlands",
+      "archetype": "faq",
+      "priority": 2,
+      "path": "/qa"
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/find-a-clinic",
+      "title": "Vind een kliniek | Juvéderm® Netherlands",
+      "archetype": "find-a-clinic",
+      "priority": 2,
+      "path": "/find-a-clinic"
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/contact-us",
+      "title": "Neem contact op",
+      "archetype": "legal",
+      "priority": 3,
+      "path": "/contact-us"
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/disclaimer",
+      "title": "Social media disclaimer | Juvéderm® Netherlands",
+      "archetype": "legal",
+      "priority": 3,
+      "path": "/disclaimer"
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/algemene-voorwaarden-kliniekzoeker",
+      "title": "Algemene voorwaarden kliniekzoeker",
+      "archetype": "legal",
+      "priority": 3,
+      "path": "/algemene-voorwaarden-kliniekzoeker"
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "homepage",
+      "description": "Main landing page with hero banner, value propositions, before/after carousel, treatment areas tabs, and clinic finder CTA",
+      "count": 1,
+      "sampleUrls": ["https://www.juvederm.nl/nl"]
+    },
+    {
+      "name": "treatment",
+      "description": "Treatment detail pages with hero image, intro section, key benefits, before/after comparison, product carousel, FAQ accordion, treatment areas tabs, and clinic finder CTA. All 5 treatment pages share the same layout structure.",
+      "count": 5,
+      "sampleUrls": [
+        "https://www.juvederm.nl/nl/treatment/lips",
+        "https://www.juvederm.nl/nl/treatment/enhance",
+        "https://www.juvederm.nl/nl/treatment/male"
+      ]
+    },
+    {
+      "name": "faq",
+      "description": "FAQ page with hero, topic navigation, multiple content sections with rich text, images, and key takeaway boxes",
+      "count": 1,
+      "sampleUrls": ["https://www.juvederm.nl/nl/qa"]
+    },
+    {
+      "name": "find-a-clinic",
+      "description": "Clinic finder page with search-by-location functionality, city quick links, and map integration",
+      "count": 1,
+      "sampleUrls": ["https://www.juvederm.nl/nl/find-a-clinic"]
+    },
+    {
+      "name": "legal",
+      "description": "Simple content pages for contact info, disclaimers, and terms. Minimal layout with text content.",
+      "count": 3,
+      "sampleUrls": [
+        "https://www.juvederm.nl/nl/contact-us",
+        "https://www.juvederm.nl/nl/disclaimer"
+      ]
+    }
+  ],
+  "navigation": {
+    "header": [
+      {
+        "label": "Behandeling",
+        "children": [
+          {"label": "Lippen", "url": "https://www.juvederm.nl/nl/treatment/lips"},
+          {"label": "Ogen", "url": "https://www.juvederm.nl/nl/treatment/eye-area"},
+          {"label": "Accentueren", "url": "https://www.juvederm.nl/nl/treatment/enhance"},
+          {"label": "Herstel", "url": "https://www.juvederm.nl/nl/treatment/restore"},
+          {"label": "Man", "url": "https://www.juvederm.nl/nl/treatment/male"}
+        ]
+      },
+      {
+        "label": "FAQ",
+        "children": [
+          {"label": "Over Juvéderm®", "url": "https://www.juvederm.nl/nl/qa#about-juvederm"},
+          {"label": "Kosten", "url": "https://www.juvederm.nl/nl/qa#duration"},
+          {"label": "Langdurige resultaten", "url": "https://www.juvederm.nl/nl/qa#results"},
+          {"label": "Veiligheid", "url": "https://www.juvederm.nl/nl/qa#side-effects"},
+          {"label": "Zones van het gezicht", "url": "https://www.juvederm.nl/nl/qa#facial-areas"}
+        ]
+      },
+      {
+        "label": "Vind je kliniek",
+        "url": "https://www.juvederm.nl/nl/find-a-clinic"
+      }
+    ],
+    "footer": [
+      {
+        "label": "Behandeling",
+        "children": [
+          {"label": "Lippen", "url": "https://www.juvederm.nl/nl/treatment/lips"},
+          {"label": "Ogen", "url": "https://www.juvederm.nl/nl/treatment/eye-area"},
+          {"label": "Accentueren", "url": "https://www.juvederm.nl/nl/treatment/enhance"},
+          {"label": "Herstel", "url": "https://www.juvederm.nl/nl/treatment/restore"},
+          {"label": "Man", "url": "https://www.juvederm.nl/nl/treatment/male"}
+        ]
+      },
+      {
+        "label": "FAQ",
+        "children": [
+          {"label": "Over Juvéderm®", "url": "https://www.juvederm.nl/nl/qa#about-juvederm"},
+          {"label": "Kosten", "url": "https://www.juvederm.nl/nl/qa#duration"},
+          {"label": "Langdurige resultaten", "url": "https://www.juvederm.nl/nl/qa#results"},
+          {"label": "Veiligheid", "url": "https://www.juvederm.nl/nl/qa#side-effects"},
+          {"label": "Zones van het gezicht", "url": "https://www.juvederm.nl/nl/qa#facial-areas"}
+        ]
+      },
+      {
+        "label": "Utility",
+        "children": [
+          {"label": "Neem contact op", "url": "https://www.juvederm.nl/nl/contact-us"},
+          {"label": "Privacy beleid", "url": "https://www.abbvie.nl/privacy.html"},
+          {"label": "Algemene voorwaarden", "url": "https://www.abbvie.nl/termsofuse.html"},
+          {"label": "Social media disclaimer", "url": "https://www.juvederm.nl/nl/disclaimer"},
+          {"label": "Algemene voorwaarden kliniekzoeker", "url": "https://www.juvederm.nl/nl/algemene-voorwaarden-kliniekzoeker"}
+        ]
+      }
+    ],
+    "social": [
+      {"platform": "instagram", "url": "https://www.instagram.com/juvederm.nl/"},
+      {"platform": "facebook", "url": "https://www.facebook.com/juvederm.nl"}
+    ]
+  },
+  "assets": {
+    "images": [
+      "https://www.juvederm.nl/adobe/dynamicmedia/deliver/dm-aid--1837f3c6-df22-47f8-aa8e-d5d380f2e340/2024-key-visual-sofie-01803-rgb-lr.jpg",
+      "https://www.juvederm.nl/adobe/dynamicmedia/deliver/dm-aid--78e7086f-fbda-4358-b44e-c873a5d715b2/2024-key-visual-lily-s01-00465-rgb-lr.jpg",
+      "https://www.juvederm.nl/adobe/dynamicmedia/deliver/dm-aid--16b903a8-a65f-4c52-9427-cacba2e32447/m-before.jpg",
+      "https://www.juvederm.nl/adobe/dynamicmedia/deliver/dm-aid--c757175d-2e1b-40e4-af73-5c937a8076be/m-after.jpg",
+      "https://www.juvederm.nl/adobe/dynamicmedia/deliver/dm-aid--32a21521-b4a2-44d3-aaed-2f5c707b83bd/2024-incidental-lily-00439-rgb-lr-treatment-area-section.jpg",
+      "https://www.juvederm.nl/adobe/dynamicmedia/deliver/dm-aid--29c13e32-5ae5-4711-b56e-aa51e6f2be38/2024-key-visual-stefan-02608-rgb-lr-treatment-area-section.jpg",
+      "https://www.juvederm.nl/adobe/dynamicmedia/deliver/dm-aid--f7e683bd-9cea-4f22-89f2-793fa4b41741/juvederm-volbella-image01-rgb.jpg",
+      "https://www.juvederm.nl/adobe/dynamicmedia/deliver/dm-aid--8ac927e3-64a5-4353-97a2-0849477030f0/juvederm-volift-image01-rgb.jpg",
+      "https://www.juvederm.nl/adobe/dynamicmedia/deliver/dm-aid--28d7a1d3-07b3-4a66-bfe4-9ce6b98222c6/juvederm-ultra4-image01-rgb.jpg",
+      "https://www.juvederm.nl/adobe/dynamicmedia/deliver/dm-aid--721086fc-bf03-4770-a1ca-9f0ead9b9ad0/icon-kijk-uit-melding-white.png",
+      "https://www.juvederm.nl/adobe/dynamicmedia/deliver/dm-aid--f48d3ea7-c126-4acb-b55b-c3262272e37c/2024-key-visual-carmen-01160-rgb-lr.jpg",
+      "https://www.juvederm.nl/adobe/dynamicmedia/deliver/dm-aid--8aa3fe76-684f-4dfa-98e8-4f734b2b1d65/2024-key-visual-stefan-02608-rgb-lr.jpg",
+      "https://www.juvederm.nl/adobe/dynamicmedia/deliver/dm-aid--f82ec3f1-5756-46c1-a0ca-f30501e4516a/2024-key-visual-lily-00404-rgb-lr.jpg",
+      "https://www.juvederm.nl/adobe/dynamicmedia/deliver/dm-aid--39402d54-cccd-4b6d-af72-87c053539727/2024-key-visual-lily-00404-rgb-lr-accordion-image.jpg"
+    ],
+    "fonts": [],
+    "favicon": "https://www.juvederm.nl/favicon.ico"
+  }
+}

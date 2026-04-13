@@ -1,0 +1,293 @@
+{
+  "blockPalette": [
+    {
+      "name": "hero",
+      "source": "custom",
+      "description": "Full-width hero section with background image, heading, and optional subtitle. Used at the top of every content page.",
+      "contentModel": "Row 1: image | Row 2: heading text"
+    },
+    {
+      "name": "columns",
+      "source": "block-collection",
+      "description": "Multi-column layout for side-by-side content. Used for intro sections with image + text.",
+      "contentModel": "Row 1: col1 content | col2 content"
+    },
+    {
+      "name": "cards",
+      "source": "block-collection",
+      "description": "Card grid for value propositions and key benefits. Each card has an icon/image, heading, and description.",
+      "contentModel": "Row per card: image | heading | description"
+    },
+    {
+      "name": "before-after",
+      "source": "custom",
+      "description": "Before/after image comparison slider with carousel. Shows treatment results.",
+      "contentModel": "Row per slide: before-image | after-image"
+    },
+    {
+      "name": "tabs",
+      "source": "block-collection",
+      "description": "Tabbed content panels for Female/Male treatment area views.",
+      "contentModel": "Row 1: tab-label | Row 2+: tab content"
+    },
+    {
+      "name": "carousel",
+      "source": "custom",
+      "description": "Horizontal scrollable carousel for products or any repeating card content",
+      "contentModel": "Row per product: image | name | description"
+    },
+    {
+      "name": "accordion",
+      "source": "block-collection",
+      "description": "Expandable FAQ sections with question/answer pairs.",
+      "contentModel": "Row per item: question | answer"
+    },
+    {
+      "name": "clinic-finder",
+      "source": "custom",
+      "description": "Location search widget for finding nearby clinics. Includes search input and geolocation button.",
+      "contentModel": "Row 1: heading | Row 2: placeholder text"
+    },
+    {
+      "name": "references",
+      "source": "custom",
+      "description": "Collapsible footnotes/references section at the bottom of pages.",
+      "contentModel": "Row 1: reference text (numbered list)"
+    }
+  ],
+  "archetypeBlueprints": {
+    "homepage": [
+      {
+        "name": "Homepage",
+        "sections": [
+          {
+            "name": "Hero",
+            "sequences": [
+              "hero"
+            ]
+          },
+          {
+            "name": "Introduction",
+            "sequences": [
+              "default",
+              "columns"
+            ]
+          },
+          {
+            "name": "Why JUVÉDERM",
+            "sequences": [
+              "default",
+              "cards"
+            ]
+          },
+          {
+            "name": "Before After",
+            "sequences": [
+              "before-after"
+            ]
+          },
+          {
+            "name": "Treatment Areas",
+            "sequences": [
+              "tabs"
+            ]
+          },
+          {
+            "name": "Find Clinic",
+            "sequences": [
+              "clinic-finder"
+            ]
+          },
+          {
+            "name": "References",
+            "sequences": [
+              "references"
+            ]
+          }
+        ]
+      }
+    ],
+    "treatment": [
+      {
+        "name": "Treatment Page",
+        "sections": [
+          {
+            "name": "Hero",
+            "sequences": [
+              "hero"
+            ]
+          },
+          {
+            "name": "Introduction",
+            "sequences": [
+              "default",
+              "columns"
+            ]
+          },
+          {
+            "name": "Key Benefits",
+            "sequences": [
+              "cards"
+            ]
+          },
+          {
+            "name": "Before After",
+            "sequences": [
+              "before-after"
+            ]
+          },
+          {
+            "name": "Products",
+            "sequences": [
+              "carousel"
+            ]
+          },
+          {
+            "name": "FAQ",
+            "sequences": [
+              "accordion"
+            ]
+          },
+          {
+            "name": "Treatment Areas",
+            "sequences": [
+              "tabs"
+            ]
+          },
+          {
+            "name": "Find Clinic",
+            "sequences": [
+              "clinic-finder"
+            ]
+          },
+          {
+            "name": "References",
+            "sequences": [
+              "references"
+            ]
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "name": "FAQ Page",
+        "sections": [
+          {
+            "name": "Hero",
+            "sequences": [
+              "hero"
+            ]
+          },
+          {
+            "name": "Topic Navigation",
+            "sequences": [
+              "default"
+            ]
+          },
+          {
+            "name": "About JUVÉDERM",
+            "sequences": [
+              "default",
+              "columns"
+            ]
+          },
+          {
+            "name": "Safety",
+            "sequences": [
+              "default",
+              "columns"
+            ]
+          },
+          {
+            "name": "Expectations",
+            "sequences": [
+              "default",
+              "columns"
+            ]
+          },
+          {
+            "name": "Results & Cost",
+            "sequences": [
+              "default",
+              "columns"
+            ]
+          },
+          {
+            "name": "Facial Areas",
+            "sequences": [
+              "default",
+              "columns"
+            ]
+          },
+          {
+            "name": "References",
+            "sequences": [
+              "references"
+            ]
+          }
+        ]
+      }
+    ],
+    "find-a-clinic": [
+      {
+        "name": "Find a Clinic Page",
+        "sections": [
+          {
+            "name": "Search",
+            "sequences": [
+              "clinic-finder"
+            ]
+          },
+          {
+            "name": "City Links",
+            "sequences": [
+              "default"
+            ]
+          },
+          {
+            "name": "Manual Search",
+            "sequences": [
+              "default"
+            ]
+          }
+        ]
+      }
+    ],
+    "legal": [
+      {
+        "name": "Legal Page",
+        "sections": [
+          {
+            "name": "Content",
+            "sequences": [
+              "default"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "siteConventions": {
+    "language": "nl",
+    "urlPrefix": "/nl/",
+    "imageDelivery": "Adobe Dynamic Media (dm-aid pattern)",
+    "brand": "JUVÉDERM® / Allergan Aesthetics / AbbVie",
+    "legalDisclaimer": "Kijk uit. Jezelf mooier maken kan lelijk uitpakken. Een geslaagde ingreep begint bij een goede arts.",
+    "ctaPattern": "Vind je kliniek → /nl/find-a-clinic",
+    "sharedComponents": {
+      "footer-disclaimer": "Legal text about Allergan Aesthetics / AbbVie appears on every page",
+      "warning-banner": "Kijk uit warning appears in footer on every page",
+      "social-links": "Instagram and Facebook links in footer",
+      "clinic-finder-cta": "Appears on most content pages as a section"
+    },
+    "referenceStyle": "Numbered superscript references with expandable footnote section",
+    "colorPalette": {
+      "primary": "#8B1A4A",
+      "secondary": "#D4A574",
+      "accent": "#C5A882",
+      "background": "#FFFFFF",
+      "text": "#333333"
+    }
+  }
+}

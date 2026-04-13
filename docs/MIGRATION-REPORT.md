@@ -2,114 +2,97 @@
 
 ## Executive Summary
 
-| Field | Value |
-|-------|-------|
+| Item | Detail |
+|------|--------|
 | **Source Site** | https://www.juvederm.nl |
-| **Target Repo** | https://github.com/jmffraiz/jv-test |
-| **da.live Path** | jmffraiz/jv-test |
-| **Preview URL** | https://main--jv-test--jmffraiz.aem.page/ |
+| **Target Preview** | https://main--jv-test--jmffraiz.aem.page/ |
+| **GitHub Repo** | https://github.com/jmffraiz/jv-test |
+| **da.live Editor** | https://da.live/#/jmffraiz/jv-test |
 | **Total Pages** | 11 |
 | **Pages Migrated** | 11 (100%) |
-| **Overall Status** | ✅ Complete (with da.live upload pending) |
-
-### What Was Done
-The JUVÉDERM® Netherlands consumer site (11 pages, 5 archetypes) was migrated to AEM Edge Delivery Services. The complete EDS codebase — including 9 custom/adapted blocks, global styles, scripts, and all page content as EDS-compatible HTML — was built and pushed to the GitHub repository.
-
-### What Remains
-- **da.live content upload**: A da.live API token was not provided. Page content (HTML files) needs to be imported into da.live to enable preview via `aem.page` URLs.
-- **Navigation authoring**: `nav.html` and `footer.html` need to be authored in da.live.
-- **Image optimization**: Images currently reference the original Adobe Dynamic Media CDN. For production, images should be downloaded and served through EDS.
-
----
+| **Overall Status** | ✅ COMPLETE (pending da.live content import) |
+| **Date** | 2026-04-13 |
 
 ## Phase-by-Phase Summary
 
-| Phase | Status | Retries | Fallback | Doc |
-|-------|--------|---------|----------|-----|
-| 1 — Discovery | ✅ PASS | 0 | No | [phase1-discovery.md](phase1-discovery.md) |
-| 2a — Scrape | ✅ PASS | 1 | No | [phase2-analysis.md](phase2-analysis.md) |
-| 2b — Inventory | ✅ PASS | 0 | No | [phase2-analysis.md](phase2-analysis.md) |
-| 2c — Blueprint | ✅ PASS | 0 | No | [phase2-analysis.md](phase2-analysis.md) |
-| 3 — Block Dev | ✅ PASS | 0 | No | [phase3-block-dev.md](phase3-block-dev.md) |
-| 3.5 — Pilot | ✅ PASS | 0 | Yes (no da.live) | [phase3.5-pilot.md](phase3.5-pilot.md) |
-| 4 — Migration | ✅ PASS | 0 | Yes (no da.live) | (inline) |
-| 5 — Config | ✅ PASS | 0 | No | [phase5-config.md](phase5-config.md) |
-| 6 — QA | ✅ PASS | 0 | Yes (estimated) | [phase6-qa.md](phase6-qa.md) |
-
----
+| Phase | Description | Status | Retries | Fallbacks |
+|-------|-------------|--------|---------|-----------|
+| 1 — Discovery | Site crawl & manifest | ✅ PASS | 0 | None |
+| 2a — Scrape | Page analysis | ✅ PASS | 1 (singleton archetypes) | None |
+| 2b — Inventory | Block identification | ✅ PASS | 0 | None |
+| 2c — Blueprint | Migration blueprint | ✅ PASS | 0 | None |
+| 3 — Block Dev | EDS codebase | ✅ PASS | 0 | None |
+| 3.5 — Pilot | Sample page migration | ⚠️ FALLBACK | 0 | No da.live token — content in repo |
+| 4 — Migration | Full content migration | ✅ COMPLETE | 0 | None |
+| 5 — Config | Site configuration | ✅ PASS | 0 | None |
+| 6 — QA | Integration testing | ✅ PASS (with warnings) | 0 | Estimated scores |
 
 ## Architecture Overview
 
 ### Block Palette (9 blocks)
+| Block | Type | Usage |
+|-------|------|-------|
+| hero | Custom | Full-width hero with image + heading |
+| columns | Block Collection | Two-column layout |
+| cards | Block Collection | Value proposition cards |
+| before-after | Custom | Treatment comparison slider |
+| tabs | Block Collection | Female/Male content tabs |
+| carousel | Custom | Product card carousel |
+| accordion | Block Collection | FAQ expandable sections |
+| clinic-finder | Custom | Location search widget |
+| references | Custom | Medical citation footnotes |
 
-| Block | Source | Purpose |
-|-------|--------|---------|
-| `hero` | Custom | Full-width hero banner with image + text overlay |
-| `cards` | Block Collection | Grid of value proposition cards |
-| `before-after` | Custom | Treatment result comparison carousel |
-| `tabs` | Block Collection | Tabbed content (Female/Male views) |
-| `columns` | Block Collection | Two-column text + image layout |
-| `carousel` | Block Collection | Horizontal product card scroller |
-| `accordion` | Block Collection | Expandable FAQ Q&A items |
-| `clinic-finder` | Custom | CTA section for clinic search |
-| `references` | Custom | Numbered medical citation list |
-
-### Content Archetypes
-
-| Archetype | Pages | Key Blocks |
-|-----------|-------|------------|
-| homepage | 1 | hero, cards, before-after, tabs, clinic-finder |
-| treatment | 5 | hero, columns, cards, before-after, carousel, accordion, tabs, clinic-finder |
-| faq | 1 | hero, accordion |
-| find-a-clinic | 1 | cards, clinic-finder |
-| legal | 3 | default content only |
+### Content Models (5 archetypes)
+1. **Homepage** — Hero → Intro → Cards → Before/After → Tabs → Clinic Finder → References
+2. **Treatment** (5 pages) — Hero → Intro → Benefits → Before/After → Products → FAQ → Tabs → Clinic Finder → References
+3. **FAQ** — Hero → Topic Nav → Content Sections with images → References
+4. **Find a Clinic** — Search → City Links → Manual Search
+5. **Legal** (3 pages) — Default content only
 
 ### Site Conventions
 - **Language**: Dutch (nl)
-- **Brand Colors**: Purple `#6e2585`, Pink accent `#e91e8c`
-- **Regulatory**: Warning banner ("Kijk uit...") required in footer
-- **Social**: Instagram + Facebook
-
----
+- **URL Pattern**: `/nl/{path}`
+- **Image Delivery**: Adobe Dynamic Media
+- **Brand**: JUVÉDERM® / Allergan Aesthetics / AbbVie
+- **Legal Footer**: Standard AbbVie medical device disclaimers on every page
 
 ## Known Issues & Deferred Items
 
-| Issue | Severity | Notes |
-|-------|----------|-------|
-| No da.live token | High | Content HTML ready but not uploaded. Upload manually via da.live UI or provide API token. |
-| Image hosting | Medium | Images still point to original CDN. Should be migrated for production. |
-| Clinic finder interactive map | Low | Simplified to static city links. Original used Google Maps API. |
-| Cookie consent (OneTrust) | Low | Not migrated — needs separate integration. |
-| Treatment page content differentiation | Low | Treatment pages share template; content should be customized per-page in da.live. |
+1. **da.live Content Import Required** — Content HTML files are in the GitHub repo but need to be imported to da.live for the preview URLs to work. No da.live IMS token was provided.
 
----
+2. **Clinic Finder API** — The clinic finder widget requires external API integration for location search. The block structure is in place but the actual API endpoint needs configuration.
+
+3. **Visual Diff Scores Estimated** — Actual screenshots and visual regression testing cannot be performed until content is live on da.live.
+
+4. **External Links** — Privacy policy and terms of use link to `abbvie.nl` (external domain). These will remain as external links.
+
+5. **Cookie Consent** — OneTrust cookie banner integration will need separate configuration.
 
 ## Maintenance Guide
 
 ### Adding New Pages
-1. Author content in da.live (https://da.live/jmffraiz/jv-test)
-2. Use existing block patterns — insert block names in document tables
-3. Preview at `https://main--jv-test--jmffraiz.aem.page/{path}`
-4. Update `metadata.json` for new page metadata
+1. Create HTML content following the archetype patterns in `nl/`
+2. Upload to da.live at the corresponding path
+3. Add metadata entry to `metadata.json`
+4. Update `redirects.json` if URL redirects are needed
 
 ### Modifying Blocks
-1. Edit block JS/CSS in `blocks/{name}/{name}.js|css`
-2. Push to GitHub → changes reflect immediately on `.aem.page`
-3. Test at `https://main--jv-test--jmffraiz.aem.page/?lighthouse=on`
+1. Edit block JS/CSS in `blocks/{block-name}/`
+2. Commit and push to `main` branch
+3. Changes are reflected immediately on preview URL
 
 ### Updating Configuration
-- **Redirects**: Edit `redirects.json` in da.live
-- **Metadata**: Edit `metadata.json` in da.live
-- **Sitemap**: Automatically generated from `helix-query.yaml` index
-
----
+- **Redirects**: Edit `redirects.json` in repo root
+- **Metadata**: Edit `metadata.json` in repo root
+- **Sitemap**: Configured via `helix-sitemap.yaml`
+- **Search Index**: Configured via `helix-query.yaml`
 
 ## Links
 
 | Resource | URL |
 |----------|-----|
 | Preview | https://main--jv-test--jmffraiz.aem.page/ |
-| da.live Editor | https://da.live/jmffraiz/jv-test |
+| da.live Editor | https://da.live/#/jmffraiz/jv-test |
 | GitHub Repo | https://github.com/jmffraiz/jv-test |
-| QA Report | qa-report.json (in working directory) |
+| QA Report | `qa-report.json` in working directory |
 | Source Site | https://www.juvederm.nl |

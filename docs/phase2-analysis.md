@@ -1,50 +1,37 @@
 # Phase 2 — Analysis Report
 
-## Block Palette (9 blocks)
+## Site: https://www.juvederm.nl
+
+## Phase 2a — Scrape Samples
+Scraped all 11 pages across 5 archetypes. Created cleaned HTML, metadata, and screenshots for each.
+
+## Phase 2b — Block Inventory
+Identified **9 blocks** needed for the migration:
 
 | Block | Source | Description |
 |-------|--------|-------------|
-| hero | custom | Full-width hero banner with background image and overlay text |
-| cards | block-collection | Grid of value proposition cards with icon, heading, description |
-| before-after | custom | Before/after image comparison carousel |
-| tabs | block-collection | Tabbed content (Female/Male treatment views) |
-| columns | block-collection | Multi-column layout for text+image sections |
-| carousel | block-collection | Horizontal product card carousel |
-| accordion | block-collection | Expandable FAQ Q&A sections |
-| clinic-finder | custom | Simplified clinic finder CTA widget |
-| references | custom | Numbered citation list for medical references |
+| hero | custom | Full-width hero with image + heading |
+| columns | block-collection | Two-column layout |
+| cards | block-collection | Card grid for value propositions |
+| before-after | custom | Before/after image comparison |
+| tabs | block-collection | Tabbed content (Female/Male) |
+| product-carousel | custom | Horizontal product card carousel |
+| accordion | block-collection | Expandable FAQ sections |
+| clinic-finder | custom | Location search widget |
+| references | custom | Collapsible footnotes |
 
-## Custom Blocks Needed: 4
-- **hero**: Brand-specific hero with image overlay
-- **before-after**: Treatment result comparison with carousel dots
-- **clinic-finder**: CTA block linking to clinic search
-- **references**: Formatted numbered reference list (regulatory requirement)
+## Phase 2c — Blueprint
+Created comprehensive blueprint with:
+- Block palette with content models
+- Archetype blueprints for all 5 archetypes
+- Site conventions (language, colors, URL patterns, shared components)
 
-## Archetype Section Maps
+## Key Design Decisions
+1. **Treatment pages** share identical structure — single archetype handles all 5
+2. **Before/after** is a custom block with comparison slider
+3. **Clinic finder** is a custom block (interactive JS widget)
+4. **Tabs block** reused from block-collection for Female/Male views
+5. **References** block handles medical citations consistently
+6. **Legal pages** use default content only — no custom blocks needed
 
-### Homepage
-hero → default intro → cards (4 value props) → before-after → tabs → clinic-finder → references
-
-### Treatment (5 pages, identical structure)
-hero → columns (intro) → cards (3 value props) → before-after → carousel (products) → accordion (FAQ) → tabs → clinic-finder → references
-
-### FAQ
-hero → default (topic nav) → multiple sections of default + columns + accordion → references
-
-### Find-a-clinic
-default (search) → cards (city links) → clinic-finder
-
-### Legal
-default (text content only)
-
-## Site Conventions
-- Language: Dutch (nl)
-- Brand colors: Purple (#6e2585), Pink accent (#e91e8c)
-- Required regulatory elements: Warning banner, legal footer text
-- All images from Adobe Dynamic Media CDN
-- Social: Instagram + Facebook links in footer
-
-## Tier 1 Validation: ALL PASS
-- 2a Scrape: PASS
-- 2b Inventory: PASS  
-- 2c Blueprint: PASS
+## Tier 1 Validation: All PASS (2a, 2b, 2c)

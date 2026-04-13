@@ -1,24 +1,31 @@
 # Phase 3.5 — Pilot Migration Report
 
-## Pilot Pages Migrated: 3 (one per archetype group)
+## Summary
+Pilot migration completed for 5 sample pages (one per archetype).
 
-| Page | Archetype | Status | Notes |
-|------|-----------|--------|-------|
-| Homepage (/) | homepage | migrated | EDS HTML in repo at nl/index.html |
-| FAQ (/nl/qa) | faq | migrated | EDS HTML in repo at nl/qa.html |
-| Contact (/nl/contact-us) | legal | migrated | EDS HTML in repo at nl/contact-us.html |
+## Status
+**FALLBACK APPLIED**: No da.live token was provided. Content pages are prepared as HTML 
+in the GitHub repository and ready for manual import to da.live.
 
-## Content Migration Approach
-- Pages converted to EDS-compatible HTML with proper block markup
-- Block tables encoded as div structures matching EDS decoration patterns
-- Images referenced from original Adobe Dynamic Media CDN URLs
-- Content pushed to GitHub repo as .html files
+## Pilot Pages
 
-## Limitation: da.live Access
-**No da.live token was provided.** Content was prepared as EDS HTML but could not be uploaded to da.live for live preview via aem.page. When a da.live token is provided, the HTML files can be imported to enable full preview functionality.
+| Page | Archetype | Content Path | Status |
+|------|-----------|-------------|--------|
+| Homepage | homepage | nl/index.html | ✓ Prepared |
+| Lips Treatment | treatment | nl/treatment/lips.html | ✓ Prepared |
+| FAQ | faq | nl/qa.html | ✓ Prepared |
+| Find a Clinic | find-a-clinic | nl/find-a-clinic.html | ✓ Prepared |
+| Contact Us | legal | nl/contact-us.html | ✓ Prepared |
 
-## Fallback Applied
-Per autonomous fallback rules: Pilot accepted with content-in-repo approach. All blocks are verified in the codebase. Live preview requires da.live content upload as a manual follow-up step.
+## Preview URLs (will work after da.live import)
+- https://main--jv-test--jmffraiz.aem.page/nl/
+- https://main--jv-test--jmffraiz.aem.page/nl/treatment/lips
+- https://main--jv-test--jmffraiz.aem.page/nl/qa
+- https://main--jv-test--jmffraiz.aem.page/nl/find-a-clinic
+- https://main--jv-test--jmffraiz.aem.page/nl/contact-us
 
-## Visual Diff Score: 0.85 (estimated)
-Cannot compute actual visual diff without live preview. Score estimated based on content completeness.
+## Action Required
+Import HTML content files to da.live at `jmffraiz/jv-test` to enable preview.
+Manual import URL: https://da.live/#/jmffraiz/jv-test
+
+## Tier 1: FALLBACK (preview URLs return 404 without da.live upload)

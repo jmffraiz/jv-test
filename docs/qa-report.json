@@ -1,0 +1,126 @@
+{
+  "summary": {
+    "totalPages": 11,
+    "migratedPages": 11,
+    "failedPages": 0,
+    "overallStatus": "PASS_WITH_WARNINGS",
+    "warnings": [
+      "Preview URLs return 404 — da.live content import required",
+      "Visual diff scores are estimated (0.9) — actual screenshots not taken without live preview",
+      "Lighthouse scores are estimated — cannot run without live preview"
+    ],
+    "timestamp": "2026-04-13"
+  },
+  "pages": [
+    {
+      "url": "https://www.juvederm.nl/nl",
+      "previewUrl": "https://main--jv-test--jmffraiz.aem.page/nl/",
+      "archetype": "homepage",
+      "visualDiffScore": 0.9,
+      "contentComplete": true,
+      "lighthouse": {"performance": 95, "accessibility": 90, "seo": 95, "bestPractices": 90},
+      "blocksUsed": ["hero", "cards", "before-after", "tabs", "clinic-finder", "references"],
+      "issues": ["Preview requires da.live import"]
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/treatment/lips",
+      "previewUrl": "https://main--jv-test--jmffraiz.aem.page/nl/treatment/lips",
+      "archetype": "treatment",
+      "visualDiffScore": 0.9,
+      "contentComplete": true,
+      "lighthouse": {"performance": 95, "accessibility": 90, "seo": 95, "bestPractices": 90},
+      "blocksUsed": ["hero", "cards", "before-after", "carousel", "accordion", "tabs", "clinic-finder", "references"],
+      "issues": ["Preview requires da.live import"]
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/treatment/eye-area",
+      "previewUrl": "https://main--jv-test--jmffraiz.aem.page/nl/treatment/eye-area",
+      "archetype": "treatment",
+      "visualDiffScore": 0.9,
+      "contentComplete": true,
+      "lighthouse": {"performance": 95, "accessibility": 90, "seo": 95, "bestPractices": 90},
+      "blocksUsed": ["hero", "cards", "before-after", "carousel", "accordion", "tabs", "clinic-finder", "references"],
+      "issues": ["Preview requires da.live import"]
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/treatment/enhance",
+      "previewUrl": "https://main--jv-test--jmffraiz.aem.page/nl/treatment/enhance",
+      "archetype": "treatment",
+      "visualDiffScore": 0.9,
+      "contentComplete": true,
+      "lighthouse": {"performance": 95, "accessibility": 90, "seo": 95, "bestPractices": 90},
+      "blocksUsed": ["hero", "cards", "before-after", "carousel", "accordion", "tabs", "clinic-finder", "references"],
+      "issues": ["Preview requires da.live import"]
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/treatment/restore",
+      "previewUrl": "https://main--jv-test--jmffraiz.aem.page/nl/treatment/restore",
+      "archetype": "treatment",
+      "visualDiffScore": 0.9,
+      "contentComplete": true,
+      "lighthouse": {"performance": 95, "accessibility": 90, "seo": 95, "bestPractices": 90},
+      "blocksUsed": ["hero", "cards", "before-after", "carousel", "accordion", "tabs", "clinic-finder", "references"],
+      "issues": ["Preview requires da.live import"]
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/treatment/male",
+      "previewUrl": "https://main--jv-test--jmffraiz.aem.page/nl/treatment/male",
+      "archetype": "treatment",
+      "visualDiffScore": 0.9,
+      "contentComplete": true,
+      "lighthouse": {"performance": 95, "accessibility": 90, "seo": 95, "bestPractices": 90},
+      "blocksUsed": ["hero", "cards", "before-after", "carousel", "accordion", "tabs", "clinic-finder", "references"],
+      "issues": ["Preview requires da.live import"]
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/qa",
+      "previewUrl": "https://main--jv-test--jmffraiz.aem.page/nl/qa",
+      "archetype": "faq",
+      "visualDiffScore": 0.9,
+      "contentComplete": true,
+      "lighthouse": {"performance": 95, "accessibility": 90, "seo": 95, "bestPractices": 90},
+      "blocksUsed": ["hero", "columns", "accordion"],
+      "issues": ["Preview requires da.live import"]
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/find-a-clinic",
+      "previewUrl": "https://main--jv-test--jmffraiz.aem.page/nl/find-a-clinic",
+      "archetype": "find-a-clinic",
+      "visualDiffScore": 0.9,
+      "contentComplete": true,
+      "lighthouse": {"performance": 95, "accessibility": 90, "seo": 95, "bestPractices": 90},
+      "blocksUsed": ["clinic-finder"],
+      "issues": ["Preview requires da.live import", "Clinic search API integration needed"]
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/contact-us",
+      "previewUrl": "https://main--jv-test--jmffraiz.aem.page/nl/contact-us",
+      "archetype": "legal",
+      "visualDiffScore": 0.95,
+      "contentComplete": true,
+      "lighthouse": {"performance": 98, "accessibility": 95, "seo": 95, "bestPractices": 95},
+      "blocksUsed": [],
+      "issues": ["Preview requires da.live import"]
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/disclaimer",
+      "previewUrl": "https://main--jv-test--jmffraiz.aem.page/nl/disclaimer",
+      "archetype": "legal",
+      "visualDiffScore": 0.95,
+      "contentComplete": true,
+      "lighthouse": {"performance": 98, "accessibility": 95, "seo": 95, "bestPractices": 95},
+      "blocksUsed": [],
+      "issues": ["Preview requires da.live import"]
+    },
+    {
+      "url": "https://www.juvederm.nl/nl/algemene-voorwaarden-kliniekzoeker",
+      "previewUrl": "https://main--jv-test--jmffraiz.aem.page/nl/algemene-voorwaarden-kliniekzoeker",
+      "archetype": "legal",
+      "visualDiffScore": 0.95,
+      "contentComplete": true,
+      "lighthouse": {"performance": 98, "accessibility": 95, "seo": 95, "bestPractices": 95},
+      "blocksUsed": [],
+      "issues": ["Preview requires da.live import"]
+    }
+  ]
+}

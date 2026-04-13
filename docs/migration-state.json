@@ -1,0 +1,9 @@
+{
+  "phase": "phase3-blockdev",
+  "status": "completed",
+  "siteUrl": "https://www.juvederm.nl",
+  "config": {"org": "jmffraiz", "repo": "jv-test"},
+  "completedPhases": ["phase1-discovery", "phase2-analysis", "phase3-blockdev"],
+  "totalRegressions": 0,
+  "sessionCost": {"llmSessions": 4, "budget": 500}
+}
