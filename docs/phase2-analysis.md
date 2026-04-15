@@ -1,37 +1,46 @@
 # Phase 2 — Analysis Report
 
-## Site: https://www.juvederm.nl
+## Summary
+Analyzed 11 pages across 5 archetypes. Identified 8 blocks for the palette (6 from Block Collection, 1 custom, 1 embed). 
 
-## Phase 2a — Scrape Samples
-Scraped all 11 pages across 5 archetypes. Created cleaned HTML, metadata, and screenshots for each.
-
-## Phase 2b — Block Inventory
-Identified **9 blocks** needed for the migration:
+## Block Palette
 
 | Block | Source | Description |
 |-------|--------|-------------|
-| hero | custom | Full-width hero with image + heading |
-| columns | block-collection | Two-column layout |
-| cards | block-collection | Card grid for value propositions |
-| before-after | custom | Before/after image comparison |
-| tabs | block-collection | Tabbed content (Female/Male) |
-| product-carousel | custom | Horizontal product card carousel |
-| accordion | block-collection | Expandable FAQ sections |
-| clinic-finder | custom | Location search widget |
-| references | custom | Collapsible footnotes |
+| hero | Block Collection | Full-width hero banner with background image and heading |
+| cards | Block Collection | Grid of feature/USP cards with icon, heading, text |
+| carousel | Block Collection | Horizontal product carousel with image and text slides |
+| accordion | Block Collection | Expandable FAQ Q&A sections |
+| tabs | Block Collection | Tabbed content panels (male/female treatment views) |
+| columns | Block Collection | Two-column side-by-side layout |
+| before-after | Custom | Before/after image comparison gallery |
+| embed | Block Collection | External content embed (clinic finder map) |
 
-## Phase 2c — Blueprint
-Created comprehensive blueprint with:
-- Block palette with content models
-- Archetype blueprints for all 5 archetypes
-- Site conventions (language, colors, URL patterns, shared components)
+## Archetype Blueprints
 
-## Key Design Decisions
-1. **Treatment pages** share identical structure — single archetype handles all 5
-2. **Before/after** is a custom block with comparison slider
-3. **Clinic finder** is a custom block (interactive JS widget)
-4. **Tabs block** reused from block-collection for Female/Male views
-5. **References** block handles medical citations consistently
-6. **Legal pages** use default content only — no custom blocks needed
+### homepage
+- Hero → Introduction → Why JUVÉDERM (cards) → Before/After Gallery → Treatment Tabs → Clinic Finder → References
 
-## Tier 1 Validation: All PASS (2a, 2b, 2c)
+### treatment (5 pages)
+- Hero → USP Cards → Before/After → Product Carousel → FAQ Accordion → Treatment Tabs → Clinic Finder → References
+
+### faq
+- Hero → Topic Navigation → Multiple content sections with columns (About, Safety, Expectations, Costs, Facial Areas)
+
+### find-a-clinic
+- Hero → City Links (cards) → Search form
+
+### legal
+- Simple default content (headings + paragraphs)
+
+## Site Conventions
+- Language: Dutch (nl-NL)
+- Brand: JUVÉDERM® (Allergan Aesthetics / AbbVie)
+- Images: Adobe Dynamic Media with WebP
+- Shared fragments: Treatment tabs, clinic finder, references sections
+- Regulatory: Footer warning banner + citation codes required on all pages
+
+## Validation
+- **Phase 2a (Scrape):** PASS — 9 pages scraped across 5 archetypes
+- **Phase 2b (Inventory):** PASS — 8 blocks in palette, no duplicates
+- **Phase 2c (Blueprint):** PASS — All archetypes have blueprints, all blocks referenced exist in palette

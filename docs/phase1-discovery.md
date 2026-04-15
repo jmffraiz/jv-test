@@ -1,46 +1,59 @@
 # Phase 1 — Discovery Report
 
 ## Site: https://www.juvederm.nl
-## Date: 2026-04-13
+**Crawled:** 2026-04-15
 
 ## Summary
-Crawled the JUVÉDERM® Netherlands website. Discovered **11 pages** across **5 archetypes**.
+- **Total pages:** 11
+- **Archetypes:** 5 (homepage, treatment, faq, find-a-clinic, legal)
+- **Language:** Dutch (nl-NL)
+- **Brand:** JUVÉDERM® (Allergan Aesthetics / AbbVie)
 
-## Pages Discovered
+## Pages by Archetype
 
-| # | URL | Archetype | Priority |
-|---|-----|-----------|----------|
-| 1 | /nl (homepage) | homepage | 1 |
-| 2 | /nl/treatment/lips | treatment | 2 |
-| 3 | /nl/treatment/eye-area | treatment | 2 |
-| 4 | /nl/treatment/enhance | treatment | 2 |
-| 5 | /nl/treatment/restore | treatment | 2 |
-| 6 | /nl/treatment/male | treatment | 2 |
-| 7 | /nl/qa | faq | 2 |
-| 8 | /nl/find-a-clinic | find-a-clinic | 2 |
-| 9 | /nl/contact-us | legal | 3 |
-| 10 | /nl/disclaimer | legal | 3 |
-| 11 | /nl/algemene-voorwaarden-kliniekzoeker | legal | 3 |
+### homepage (1 page)
+| URL | Title | Priority |
+|-----|-------|----------|
+| /nl | JUVÉDERM Nederlands | high |
 
-## Archetypes
+### treatment (5 pages)
+| URL | Title | Priority |
+|-----|-------|----------|
+| /nl/treatment/lips | Juvederm en lippen | high |
+| /nl/treatment/eye-area | Juvederm en ogen | high |
+| /nl/treatment/enhance | Accentueren met Juvederm | high |
+| /nl/treatment/restore | Herstel met Juvederm | high |
+| /nl/treatment/male | Juvederm en mannen | high |
 
-1. **homepage** (1 page) — Main landing page with hero, value props, before/after, treatment tabs, clinic finder
-2. **treatment** (5 pages) — Treatment detail pages with hero, benefits, product carousel, FAQ accordion, treatment tabs
-3. **faq** (1 page) — FAQ page with topic navigation and rich content sections
-4. **find-a-clinic** (1 page) — Clinic finder with location search and city quick links
-5. **legal** (3 pages) — Simple content pages for contact, disclaimer, and terms
+### faq (1 page)
+| URL | Title | Priority |
+|-----|-------|----------|
+| /nl/qa | Veelgestelde vragen Juvederm | high |
 
-## Navigation Structure
-- **Header**: Behandeling (5 sub-items), FAQ (5 sub-items), Vind je kliniek
-- **Footer**: Same nav sections + utility links (contact, privacy, terms, disclaimer)
-- **Social**: Instagram, Facebook
+### find-a-clinic (1 page)
+| URL | Title | Priority |
+|-----|-------|----------|
+| /nl/find-a-clinic | Vind een kliniek | medium |
+
+### legal (3 pages)
+| URL | Title | Priority |
+|-----|-------|----------|
+| /nl/contact-us | Neem contact op | low |
+| /nl/disclaimer | Social media disclaimer | low |
+| /nl/algemene-voorwaarden-kliniekzoeker | Algemene Voorwaarden Kliniekzoeker | low |
+
+## Navigation
+- **Header:** Behandeling dropdown (5 items), FAQ dropdown (5 anchor links), CTA button "Vind je kliniek"
+- **Footer:** Behandeling links, FAQ links, Legal/utility links, Social media (Instagram, Facebook)
 
 ## Key Observations
-- Site is in Dutch (nl) language
-- All URLs follow `/nl/` prefix pattern
-- Treatment pages share identical layout structure
-- Site uses Adobe Dynamic Media for image delivery
-- Brand: Allergan Aesthetics / AbbVie
-- External links to abbvie.nl for privacy and terms
+1. Small, focused site (11 pages) — typical for a pharma brand consumer site
+2. Treatment pages share a near-identical layout (strong archetype candidate)
+3. Heavy use of Adobe Dynamic Media for images
+4. Clinic finder depends on external Google Maps API
+5. All pages share identical header, footer, and legal disclaimer structure
+6. Site is in Dutch with pharmaceutical regulatory footnotes throughout
 
-## Tier 1 Validation: PASS
+## Validation
+- **Tier 1:** PASS (all fields present, no duplicates, no missing archetypes)
+- **Tier 2:** PASS (nav coverage complete, priorities sensible, archetypes well-categorized)

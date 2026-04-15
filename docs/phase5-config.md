@@ -1,31 +1,28 @@
 # Phase 5 — Configuration Report
 
 ## Summary
-All site-level configuration files are in place in the GitHub repository.
+All site-level configuration files are in place in the GitHub repository and ready for deployment.
 
 ## Configuration Files
 
-| File | Location | Status |
-|------|----------|--------|
-| redirects.json | GitHub repo (root) | ✓ 4 redirect rules |
-| metadata.json | GitHub repo (root) | ✓ 11 page entries |
-| helix-query.yaml | GitHub repo (root) | ✓ Default index for /nl/** |
-| helix-sitemap.yaml | GitHub repo (root) | ✓ XML sitemap config |
-| robots.txt | GitHub repo (root) | ✓ Allow all + sitemap |
-| fstab.yaml | GitHub repo (root) | ✓ Points to da.live |
+| File | Location | Status | Description |
+|------|----------|--------|-------------|
+| fstab.yaml | GitHub | ✅ | Content mount → da.live/jmffraiz/jv-test |
+| helix-query.yaml | GitHub | ✅ | Query index for /nl/** pages |
+| helix-sitemap.yaml | GitHub | ✅ | Auto-generated sitemap.xml |
+| robots.txt | GitHub | ✅ | Allow all, sitemap link |
+| redirects.json | GitHub | ✅ | 4 redirects (root→/nl/, /nl/treatment→lips, /nl/clinics→find-a-clinic) |
+| metadata.json | GitHub | ✅ | Bulk metadata for all 11 pages |
+| nav.html | GitHub | ✅ | EDS navigation structure |
+| footer.html | GitHub | ✅ | EDS footer structure |
 
-## Redirect Rules
-- `/` → `/nl/` (301)
-- `/nl` → `/nl/` (301)
-- `/nl/treatment` → `/nl/treatment/lips` (302)
-- `/nl/clinics` → `/nl/find-a-clinic` (302)
+## Redirects
+| Source | Destination | Code |
+|--------|-------------|------|
+| / | /nl/ | 301 |
+| /nl | /nl/ | 301 |
+| /nl/treatment | /nl/treatment/lips | 302 |
+| /nl/clinics | /nl/find-a-clinic | 302 |
 
-## Navigation
-Navigation content is embedded in page HTML structures. Header and footer auto-decorate 
-from the shared nav/footer sections within each page.
-
-## Note
-For da.live authoring: redirects.json and metadata.json should also be uploaded as 
-spreadsheets to da.live for the live site.
-
-## Tier 1 Validation: PASS
+## Validation
+- **Tier 1:** PASS — All YAML valid, JSON valid, no redirect loops, robots.txt present
